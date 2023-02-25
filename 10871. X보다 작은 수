@@ -1,0 +1,7 @@
+n,m = map(int,input().split())
+t = list(map(int,input().split()))
+answer = []
+for i in t:
+    if i < m:
+        answer.append(str(i))
+print(' '.join(answer))
