@@ -1,0 +1,7 @@
+N1, N2 = input().split()
+if int(N1) > int(N2):
+    print('>')
+elif int(N1) == int(N2):
+    print('==')
+else:
+    print('<')
