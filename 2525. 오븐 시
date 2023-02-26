@@ -1,0 +1,9 @@
+h,m =  map(int, input().split())
+time = int(input())
+m += time
+if m < 60:
+    print(str(h) + ' ' + str(m))
+elif h + m//60 <= 23:
+    print(str(h+(m//60)) + ' ' + str(m%60))
+else:
+    print(str(h+(m//60)-24) + ' ' + str(m%60))
