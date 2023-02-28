@@ -1,0 +1,4 @@
+num = int(input())
+list = [input() for _ in range(num)]
+for i in range(num):    
+    print(list[i][0]+list[i][-1])
