@@ -1,0 +1,6 @@
+a,b,c,d,e,f = map(int,input().split())
+first = [a,b,c,d,e,f]
+answer = [1,1,2,2,2,8]
+for a in range(6):
+    answer[a] -= first[a]
+print(' '.join(map(str,answer)))
