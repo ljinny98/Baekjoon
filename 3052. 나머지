@@ -1,0 +1,6 @@
+find = []
+for num in range(10):
+    yes = int(input())
+    if yes%42 not in find:
+        find.append(yes%42)
+print(len(find))
