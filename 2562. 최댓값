@@ -1,0 +1,5 @@
+ns = []
+for a in range(9):
+    ns.append(int(input()))
+print(max(ns))
+print(ns.index(max(ns))+1)
