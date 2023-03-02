@@ -1,0 +1,11 @@
+bin, time = map(int,input().split())
+num = []
+for a in range(1,bin+1):
+    num.append(a)
+
+for n in range(time):
+    a, b = map(int,input().split())
+    t = num[a-1]
+    num[a-1] = num[b-1]
+    num[b-1] = t
+print(' '.join(map(str,num)))
