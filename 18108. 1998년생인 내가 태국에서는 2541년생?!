@@ -1,0 +1,2 @@
+now = input()
+print (str(int(now)-543))
