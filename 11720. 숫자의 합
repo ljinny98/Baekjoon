@@ -1,0 +1,6 @@
+n = input()
+n2 = input()
+a = []
+for i in n2:
+    a.append(int(i))
+print(sum(a))
