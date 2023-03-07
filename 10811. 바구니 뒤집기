@@ -8,3 +8,10 @@ for i in range(n):
     for j in range(a,b+1):
         A[j-1] = B[j-a]
 print(' '.join(map(str,A)))
+
+
+#숏코딩 1위
+f=lambda:map(int,input().split())
+n,m=f();*b,=range(n+1)
+exec("i,j=f();b[i:j+1]=b[j:i-1:-1];"*m)
+print(*b[1:])
