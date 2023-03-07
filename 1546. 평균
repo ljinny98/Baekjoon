@@ -1,0 +1,6 @@
+n = int(input())
+score = list(map(int,input().split()))
+m_score = max(score)
+for i in range(n):
+    score[i] = score[i]/m_score*100
+print(sum(score)/len(score))
