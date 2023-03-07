@@ -1,0 +1,10 @@
+m,n = map(int, input().split())
+A = [int(i+1) for i in range(m)]
+B = []
+for i in range(n):
+    a,b = map(int, input().split())
+    B = A[a-1:b]
+    B.reverse()
+    for j in range(a,b+1):
+        A[j-1] = B[j-a]
+print(' '.join(map(str,A)))
