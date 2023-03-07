@@ -1,0 +1,18 @@
+s = int(input())
+e = int(input())
+count = 0
+num = []
+if s == 1:
+    s += 1
+for i in range(s,e+1):
+    for b in range(2,i):
+      if i%b == 0:
+        break
+    else:
+        num.append(i)
+    count = 0
+if len(num) > 0:
+    print(sum(num))
+    print(num[0])
+else:
+    print(-1)
