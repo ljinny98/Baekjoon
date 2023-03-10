@@ -1,0 +1,9 @@
+import sys
+n, m = sys.stdin.readline().split()
+answer = [0]
+new = list(map(int,sys.stdin.readline().split()))
+for a in range(1,len(new)+1):
+    answer.append(sum(new[:a]))
+for _ in range(int(m)):
+    i, j = map(int,sys.stdin.readline().split())
+    print(answer[j]-answer[i-1])
