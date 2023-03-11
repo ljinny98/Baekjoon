@@ -1,0 +1,17 @@
+import sys
+input = sys.stdin.readline
+answer = 0
+while True:
+    n = input().strip()
+    if n == '0':
+      break
+    else:
+        answer = len(n)+1
+        for i in n:
+          if i == '1':
+            answer += 2
+          elif i == '0':
+            answer += 4
+          else:
+            answer += 3
+        print(answer)
