@@ -1,0 +1,13 @@
+import sys
+input = sys.stdin.readline
+for _ in range(3):
+    n = int(input())
+    answer = 0
+    for _ in range(n):
+        answer += int(input())
+    if answer == 0:
+        print('0')
+    elif answer > 0:
+        print('+')
+    else:
+        print('-')
