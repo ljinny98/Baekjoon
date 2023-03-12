@@ -1,0 +1,8 @@
+T = int(input())
+answer = []
+for i in range(T):
+    n, m = input().split()
+    for a in range(len(m)):
+        answer.append(str(m[a])*int(n))
+    print(''.join(answer))
+    answer.clear()
