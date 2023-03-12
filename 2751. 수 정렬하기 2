@@ -1,0 +1,6 @@
+import sys
+n = int(sys.stdin.readline())
+full = [int(sys.stdin.readline()) for _ in range(n)]
+full.sort()
+for i in range(n):
+    print(full[i])
