@@ -1,0 +1,10 @@
+m = input()
+m = m.upper()
+ans = {}
+for a in m:
+    ans[a] = ans.get(a,0) + 1
+val = list(ans.values())
+if val.count(max(val)) > 1:
+    print("?")
+else:
+    print(list(ans)[val.index(max(val))])
