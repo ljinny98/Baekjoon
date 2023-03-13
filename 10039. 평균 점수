@@ -1,0 +1,9 @@
+total = []
+import sys
+input = sys.stdin.readline
+for _ in range(5):
+    i = int(input().strip())
+    if i < 40:
+        i = 40
+    total.append(i)
+print(int(sum(total)/5))
