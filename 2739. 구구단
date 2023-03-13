@@ -1,0 +1,4 @@
+num = input()
+for a in range(1,10):
+    line = num + ' * ' + str(a)+ ' = ' + str(int(num)*a)
+    print(line)
