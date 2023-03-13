@@ -1,0 +1,6 @@
+n = int(input())
+pivo = [0,1]
+for a in range(n-1):
+    pivo.append(pivo[a]+pivo[a+1])
+    
+print(pivo[-1])
