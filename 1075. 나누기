@@ -1,0 +1,8 @@
+n = input()
+n = n[:-2]+'00'
+f = int(input())
+if int(n)%f == 0:
+    print(n[-2:])
+else:
+    ans = (int(n)//f)+1
+    print(str(ans*f)[-2:])
