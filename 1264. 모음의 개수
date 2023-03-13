@@ -1,0 +1,10 @@
+f = 'aeiouAEIOU'
+while True:
+    count = 0
+    n = input()
+    if n == '#':
+      break
+    else:
+      for i in f:
+        count += n.count(i)
+    print(count)
