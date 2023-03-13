@@ -1,0 +1,13 @@
+n,m = map(int,input().split())
+f = []
+f2 = []
+for a in range(n):
+    f.append(list(map(int, input().split())))
+for a in range(n):
+    f2.append(list(map(int, input().split())))
+for a in range(n):
+    for b in range(m):
+        f[a][b] += f2[a][b]
+
+for a in range(n):
+    print(' '.join(map(str,f[a])))
