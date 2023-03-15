@@ -1,0 +1,8 @@
+import sys
+input = sys.stdin.readline
+i = int(input())
+for _ in range(i):
+    n = list(input().strip().split())
+    for j in range(len(n)):
+        n[j] = n[j][::-1]
+    print(' '.join(n))
