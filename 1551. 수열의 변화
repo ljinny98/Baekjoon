@@ -1,0 +1,8 @@
+i,j = map(int,input().split())
+N = list(map(int,input().split(",")))
+for _ in range(j):
+    for a in range(len(N)-1):
+        N[a] = N[a+1]-N[a]
+    N = N[:-1]
+ans = map(str,N)
+print(','.join(ans))
