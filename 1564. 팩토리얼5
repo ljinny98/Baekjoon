@@ -1,0 +1,9 @@
+a = int(input())
+ans = 40320
+for i in range(9,a+1):
+    ans *= i
+    while ans%10 == 0:
+        ans //= 10
+    if len(str(ans)) > 5:
+        ans = int(str(ans)[-13:])
+print(str(ans)[-5:])
