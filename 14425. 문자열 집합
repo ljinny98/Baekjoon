@@ -1,0 +1,12 @@
+import sys
+input = sys.stdin.readline
+a,b = map(int,input().split())
+origin = []
+ans = 0
+for _ in range(a):
+    origin.append(input().strip())
+for _ in range(b):
+    find = input().strip()
+    if find in origin:
+        ans += 1
+print(ans)
