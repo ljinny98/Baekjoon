@@ -1,0 +1,7 @@
+import sys
+input = sys.stdin.readline
+n = input().strip()
+ans = 0
+for i in range(len(n)-1):
+    ans += 9*(i+1)*(10**i)
+print(ans+(int(n)-(10**(len(n)-1))+1)*len(n))
