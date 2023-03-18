@@ -1,0 +1,15 @@
+import sys
+input = sys.stdin.readline
+n = int(input().strip())
+
+for _ in range(n):
+    s1 = 1
+    ans = input()
+    answer = 0
+    for i in range(len(ans)):
+        if ans[i] == 'O':
+            answer += s1
+            s1 += 1
+        else:
+            s1 = 1
+    print(answer)
