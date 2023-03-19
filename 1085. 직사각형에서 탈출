@@ -1,0 +1,5 @@
+x,y,w,h = map(int,input().strip().split())
+ans = [x,y]
+ans.append(w-x)
+ans.append(h-y)
+print(min(ans))
