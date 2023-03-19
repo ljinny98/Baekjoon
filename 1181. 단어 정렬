@@ -1,0 +1,12 @@
+import sys
+input = sys.stdin.readline
+n = int(input())
+dic = []
+for _ in range(n):
+    a = input().strip()
+    if a not in dic:
+        dic.append(a)
+dic.sort()
+dic.sort(key=len)
+for i in dic:
+    print(i)
