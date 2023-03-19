@@ -1,0 +1,8 @@
+import sys
+input = sys.stdin.readline
+an = 1
+for _ in range(3):
+    an *= int(input().strip())
+
+for i in range(10):
+    print(str(an).count(str(i)))
