@@ -1,0 +1,5 @@
+a = len(input())
+if len(input()) <= a:
+    print('go')
+else:
+    print('no')
