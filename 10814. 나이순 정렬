@@ -1,0 +1,10 @@
+import sys
+input = sys.stdin.readline
+n = input()
+hey = []
+for _ in range(int(n)):
+    a,b = input().strip().split()
+    hey.append([int(a),b])
+hey.sort(key=lambda x:x[0])
+for i in range(int(n)):
+    print(hey[i][0],hey[i][1])
