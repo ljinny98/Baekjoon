@@ -1,0 +1,13 @@
+import sys
+input = sys.stdin.readline
+a = int(input())
+L = []
+for _ in range(a):
+    L.append(input().strip())
+for i in range(1,len(L[0])+1):
+    T = [L[j][-i:] for j in range(len(L))]
+    if len(set(T)) != len(L):
+        pass
+    else:
+        print(len(T[0]))
+        break
