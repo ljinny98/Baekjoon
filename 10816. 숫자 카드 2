@@ -1,0 +1,13 @@
+import sys
+input = sys.stdin.readline
+a = int(input())
+ans = list(input().strip().split())
+find = {}
+for i in range(a):
+    find[ans[i]] = find.get(ans[i],0) + 1
+
+b = input()
+a = list(input().strip().split())
+for i in range(int(b)):
+    a[i] = find.get(a[i],0)
+print(" ".join(map(str,a)))
