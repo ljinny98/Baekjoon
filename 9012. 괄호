@@ -1,0 +1,17 @@
+import sys
+input = sys.stdin.readline
+a = int(input())
+for _ in range(a):
+    ans = 0
+    l = input().strip()
+    for i in range(len(l)):
+        if l[i] == '(':
+            ans += 1
+        else:
+            ans -= 1
+            if ans < 0:
+              break
+    if ans != 0:
+        print("NO")
+    else:
+        print('YES')
