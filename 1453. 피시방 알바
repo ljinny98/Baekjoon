@@ -1,0 +1,9 @@
+import sys
+input = sys.stdin.readline
+n = int(input())
+ans = 0
+p = list(input().strip().split())
+for i in range(1,n):
+    if p[i] in p[:i]:
+        ans += 1
+print(ans)
