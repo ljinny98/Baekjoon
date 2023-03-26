@@ -1,0 +1,8 @@
+import sys
+input = sys.stdin.readline
+n,m = map(int,input().strip().split())
+ans = n*m
+t = list(map(int,input().strip().split()))
+for i in range(5):
+    t[i] = str(t[i]-ans)
+print(' '.join(t))
