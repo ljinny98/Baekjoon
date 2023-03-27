@@ -1,0 +1,21 @@
+import sys
+input = sys.stdin.readline
+n = int(input())
+u = [0,0,0]
+y = [0,0,0]
+for i in range(n):
+    t = list(map(int,input().strip().split()))
+    u[0] += t[0]
+    u[1] += t[1]
+    u[2] += t[2]
+    y[0] += t[0]**2
+    y[1] += t[1]**2
+    y[2] += t[2]**2
+mu = max(u)
+my = max(y)
+if u.count(mu) == 1:
+    print(u.index(mu)+1, mu)
+elif y.count(my) == 1:
+    print(y.index(my)+1,u[y.index(my)])
+else:
+    print(0,mu)
