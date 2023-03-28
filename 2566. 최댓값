@@ -1,0 +1,11 @@
+import sys
+input = sys.stdin.readline
+ans = [0,0,0]
+for j in range(9):
+    l = list(map(int,input().strip().split()))
+    if max(l) >= ans[2]:
+        ans[2] = max(l)
+        ans[1] = l.index(ans[2])+1
+        ans[0] = j+1
+print(ans[2])
+print(ans[0],ans[1])
