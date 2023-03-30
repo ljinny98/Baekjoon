@@ -1,0 +1,15 @@
+import sys
+input = sys.stdin.readline
+n = int(input())
+
+for _ in range(n):
+    ans = []
+    a = int(input().strip())
+    ans.append(str(a//25))
+    a %= 25
+    ans.append(str(a//10))
+    a %= 10
+    ans.append(str(a//5))
+    a %= 5
+    ans.append(str(a))
+    print(' '.join(ans))
