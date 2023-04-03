@@ -1,0 +1,8 @@
+import sys
+input = sys.stdin.readline
+C = [1,2,3]
+n = int(input())
+for _ in range(n):
+    a,b = map(int,input().strip().split())
+    C[a-1],C[b-1] = C[b-1],C[a-1]
+print(C.index(1)+1)
