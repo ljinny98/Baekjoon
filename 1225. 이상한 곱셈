@@ -1,0 +1,6 @@
+import sys
+input = sys.stdin.readline
+a,b = input().split()
+a = sum(list(int(i) for i in a))
+b = sum(list(int(j) for j in b))
+print(a*b)
