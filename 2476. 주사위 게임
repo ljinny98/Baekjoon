@@ -1,0 +1,17 @@
+import sys
+input = sys.stdin.readline
+n = int(input())
+ans = []
+for _ in range(n):
+    a = list(map(int,input().strip().split()))
+    a.sort()
+    if a[2] == a[1]:
+        if a[1] == a[0]:
+            ans.append(10000+a[0]*1000)
+        else:
+            ans.append(1000+a[1]*100)
+    elif a[1] == a[0]:
+        ans.append(1000+a[1]*100)
+    else:
+        ans.append(a[2]*100)
+print(max(ans))
