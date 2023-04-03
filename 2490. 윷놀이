@@ -1,0 +1,6 @@
+import sys
+input = sys.stdin.readline
+D = {0:'D', 1:'C', 2:'B', 3:'A', 4:'E'}
+for _ in range(3):
+    a = list(map(int,input().strip().split()))
+    print(D[sum(a)])
