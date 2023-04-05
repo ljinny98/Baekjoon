@@ -1,0 +1,8 @@
+import sys
+input = sys.stdin.readline
+t = int(input())
+for _ in range(t):
+    a = input().strip()
+    b = a.upper()[0]
+    a = b+a[1:]
+    print(a)
