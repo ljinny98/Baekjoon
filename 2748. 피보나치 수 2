@@ -1,0 +1,13 @@
+import sys
+input = sys.stdin.readline
+t = int(input())
+a, b = 0, 1
+for _ in range(t-1):
+    c = a+b
+    a, b = b, c
+if t >= 3:
+    print(c)
+elif t == 2 or t == 1:
+    print(1)
+else:
+    print(0)
