@@ -1,0 +1,7 @@
+#메모리 초과....
+import sys
+input = sys.stdin.readline
+t = int(input())
+A = list(map(int, input().strip().split()))
+A1 = (t*(t-1)//2)
+print(sum(A)-A1)
