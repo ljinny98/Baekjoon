@@ -1,0 +1,14 @@
+import sys
+input = sys.stdin.readline
+x = list(map(int, input().strip().split()))
+x.sort()
+y = input().strip()
+ans = []
+for i in range(len(y)):
+  if y[i] == 'A':
+    ans.append(str(x[0]))
+  elif y[i] == 'B':
+    ans.append(str(x[1]))
+  else:
+    ans.append(str(x[2]))
+print(' '.join(ans))
