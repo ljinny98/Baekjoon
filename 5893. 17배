@@ -1,0 +1,6 @@
+import sys
+input = sys.stdin.readline
+x = input().strip()
+y = int('0b'+x,2)
+y *= 17
+print(bin(y)[2:])
