@@ -1,0 +1,9 @@
+import sys
+input = sys.stdin.readline
+x, y = map(int, input().strip().split())
+a = int(input())
+for _ in range(a):
+    x1, y1 = map(int, input().strip().split())
+    if x1/y1 < x/y:
+        x, y = x1, y1
+print(round(x/y*1000,2))
